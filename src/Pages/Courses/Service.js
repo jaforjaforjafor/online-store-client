@@ -6,7 +6,7 @@ const Service = ({service,setBuyNow}) => {
         <div class="card lg:max-w-lg bg-base-100 shadow-xl">
         <figure><img src={img} alt="Course" /></figure>
         <div class="card-body">
-          <h2 class="card-title text-primary">Course:{Name}</h2>
+          <h2 class="text-xl font-bold text-primary">Course:{Name}</h2>
           <h4>Teacher:{Teacher}</h4>
           <p>
             {Slot.length>0
@@ -18,7 +18,7 @@ const Service = ({service,setBuyNow}) => {
              <label for="Buy-modal"
               disabled={Slot.length===0}
                  onClick={()=>setBuyNow(service)}
-              class="btn btn-primary uppercase">Buy Now</label>
+              class="btn btn-sm btn-primary uppercase">Buy Now</label>
 
           </div>
         </div>

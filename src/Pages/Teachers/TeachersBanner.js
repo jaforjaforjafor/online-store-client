@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CoursesBanner = () => {
+const TeachersBanner = () => {
     return (
         <div class="card lg:card-side bg-base-100 shadow-xl mb-10">
         <figure><img src="https://placeimg.com/400/400/arch" alt="Album"/></figure>
@@ -15,4 +15,4 @@ const CoursesBanner = () => {
     );
 };
 
-export default CoursesBanner;
+export default TeachersBanner;

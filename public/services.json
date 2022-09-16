@@ -1,95 +1,93 @@
 [
     {
-        "__id":1,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
-        "Name":"Bangla",
+        
         "Teacher": "Sabbir Sir",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00",
-                "tuesday:3:30-5:00",
-                "thursday:3:30-5:00"
+        "Course":[
+                "php:3:30-5:00",
+                "Js:5:30-7:00",
+                "Html:7:00-8:30",
+                "Math:10:00-11:30"
                 
         ]
     },
     {
-        "_id":2,
-        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
-
-        "Name":"English",
+        
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg", 
         "Teacher": "Najifa ",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00",
-                "tuesday:3:30-5:00",
-                "thursday:3:30-5:00"
-                
-        ]
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30"
+            
+    ]
     },
     {
-        "_id":3,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
 
-        "Name":"MAth",
+        
         "Teacher": "Habib",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00"
-                
-                
-        ]
+        "Course":[
+           
+            
+    ]
     },
     {
-        "_id":4,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
 
-        "Name":"Ict",
-        "Teacher": "Ha_ider Ali",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00",
-                "tuesday:3:30-5:00",
-                "thursday:3:30-5:00"
-                
-        ]
+                "Teacher": "Haider Ali",
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30"
+            
+    ]
     },
     {
-        "_id":5,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
 
-        "Name":"geometry",
+        
         "Teacher": "Rakib Sir",
-        "Slot":[
-               
-                
-        ]
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30"
+            
+    ]
     },
     {
-        "_id":6,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
 
-        "Name":"vector",
+        
         "Teacher": "Atif Sir",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00",
-                "tuesday:3:30-5:00",
-                "thursday:3:30-5:00"
-                
-        ]
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30"
+            
+    ]
     },
     {
-        "_id":7,
+        
         "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
 
-        "Name":"Bangla-2",
+        
         "Teacher": "khalekh Sir",
-        "Slot":[
-                "Saturday:3:30-5:00",
-                "Sunday:3:30-5:00",
-                "tuesday:3:30-5:00",
-                "thursday:3:30-5:00"
-                
-        ]
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30"
+            
+    ]
     }
 ]

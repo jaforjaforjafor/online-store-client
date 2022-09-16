@@ -9,6 +9,7 @@ import Login from './Pages/Login/Login';
 import ContactUs from './Pages/Home/ContactUs';
 import Footer from './Pages/Home/Footer';
 import Courses from './Pages/Courses/Courses';
+import Teachers from './Pages/Teachers/Teachers';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="courses" element={<Courses />} />
+        <Route path="teachers" element={<Teachers />} />
       </Routes>
       <Footer></Footer>
     </div>
