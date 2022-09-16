@@ -10,6 +10,8 @@ import ContactUs from './Pages/Home/ContactUs';
 import Footer from './Pages/Home/Footer';
 import Courses from './Pages/Courses/Courses';
 import Teachers from './Pages/Teachers/Teachers';
+import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 
 function App() {
@@ -21,9 +23,16 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
         <Route path="contactus" element={<ContactUs />} />
-        <Route path="courses" element={<Courses />} />
-        <Route path="teachers" element={<Teachers />} />
+        <Route path="courses" element={
+        <RequireAuth>
+             <Courses />
+        </RequireAuth>} />
+        <Route path="teachers" element={
+        <RequireAuth>
+              <Teachers />
+        </RequireAuth>} />
       </Routes>
       <Footer></Footer>
     </div>
