@@ -1,0 +1,95 @@
+[
+    {
+        "__id":1,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+        "Name":"Bangla",
+        "Teacher": "Sabbir Sir",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00",
+                "tuesday:3:30-5:00",
+                "thursday:3:30-5:00"
+                
+        ]
+    },
+    {
+        "_id":2,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"English",
+        "Teacher": "Najifa ",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00",
+                "tuesday:3:30-5:00",
+                "thursday:3:30-5:00"
+                
+        ]
+    },
+    {
+        "_id":3,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"MAth",
+        "Teacher": "Habib",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00"
+                
+                
+        ]
+    },
+    {
+        "_id":4,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"Ict",
+        "Teacher": "Ha_ider Ali",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00",
+                "tuesday:3:30-5:00",
+                "thursday:3:30-5:00"
+                
+        ]
+    },
+    {
+        "_id":5,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"geometry",
+        "Teacher": "Rakib Sir",
+        "Slot":[
+               
+                
+        ]
+    },
+    {
+        "_id":6,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"vector",
+        "Teacher": "Atif Sir",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00",
+                "tuesday:3:30-5:00",
+                "thursday:3:30-5:00"
+                
+        ]
+    },
+    {
+        "_id":7,
+        "img":"https://i.ytimg.com/vi/3n_nqhDTkFQ/maxresdefault.jpg",
+
+        "Name":"Bangla-2",
+        "Teacher": "khalekh Sir",
+        "Slot":[
+                "Saturday:3:30-5:00",
+                "Sunday:3:30-5:00",
+                "tuesday:3:30-5:00",
+                "thursday:3:30-5:00"
+                
+        ]
+    }
+]
