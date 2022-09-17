@@ -7,7 +7,7 @@ const Service = ({service,setBuyNow}) => {
         <figure><img src={img} alt="Course" /></figure>
         <div className="card-body">
           <h2 className="text-xl font-bold text-primary">Course:{Name}</h2>
-          <h4>Teacher:{Teacher}</h4>
+          <h3 className="text-xl font-bold text-blue-600">Teacher:{Teacher}</h3>
           <p>
             {Slot.length>0
             ?<span>{Slot[0]}</span>

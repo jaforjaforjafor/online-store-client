@@ -2,6 +2,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
+
 const BuyNowModal = ({buyNow,setBuyNow}) => {
     const {_id,Name,Slot,Teacher,img}=buyNow;
     const [user, loading, error] = useAuthState(auth);
@@ -11,15 +12,27 @@ const BuyNowModal = ({buyNow,setBuyNow}) => {
         console.log( _id,slo,Name,Teacher);
         const buying={
           buyNowId: _id,
-          buyNow:Name,
+          Name,
           buyNow:Teacher,
           slo,
           client:user.email,
           clientName:user.displayName,
           phone:event.target.phone.value
         }
-        //to close the modal
-        setBuyNow(null);
+        fetch('http://localhost:5000/buying',{
+          method:'POST',
+          headers:{
+            'content-type': 'application/json'
+          },
+          body:JSON.stringify(buying)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+          console.log(data);
+            //to close the modal
+              setBuyNow(null);
+        })
+        
     }
     return (
         <div>
@@ -29,9 +42,9 @@ const BuyNowModal = ({buyNow,setBuyNow}) => {
   <img src={img} alt="Course" />
   <label htmlFor="Buy-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 
-    <h3 className="font-bold text-lg text-green-400">Buy For:{Name}</h3>
-    <h4>Teacher{Teacher}</h4>
-    <p className="py-4">{Slot}</p>
+    <h3 className="font-bold text-lg text-green-400">Course:{Name}</h3>
+    <h2 className="font-bold text-lg text-blue-400">Teacher:{Teacher}</h2>
+    <p className="py-4 font-bold text-lg"><span className='text-purple-400'> Available Slots:</span><small>{Slot}</small></p>
     <form onSubmit={handleBuy} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
     <select name='slo' className="select select-bordered w-full max-w-xs">
         {Slot.map((slo, index)=><option

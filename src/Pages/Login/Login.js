@@ -104,7 +104,7 @@ const Login = () => {
 </div>
 
       
-      {signInError};
+      {signInError}
       <input className='btn w-full max-w-xs' type="submit" value='Login' />
     </form>
     <p><small>New in Online Education?<Link className='text-blue-500' to="/signUp">Create new Account</Link></small> </p>
