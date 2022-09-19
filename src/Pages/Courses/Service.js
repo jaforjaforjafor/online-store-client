@@ -19,8 +19,7 @@ const Service = ({service,setBuyNow}) => {
               disabled={Slot.length===0}
                  onClick={()=>setBuyNow(service)}
               className="btn btn-sm btn-primary uppercase">Buy Now</label>
-
-          </div>
+               </div>
         </div>
       </div>
     );

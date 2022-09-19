@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 
@@ -28,7 +29,14 @@ const BuyNowModal = ({buyNow,setBuyNow}) => {
         })
         .then(res=>res.json())
         .then(data=>{
-          console.log(data);
+          if(data.success){
+            toast(`course is purchase,at${slo},with that${Teacher}`);
+          }
+          else{
+
+            toast.error(`course is already  purchased,on${data.buying?.slo},with that ${data.buying?.Teacher} `);
+
+          }
             //to close the modal
               setBuyNow(null);
         })

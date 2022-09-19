@@ -1,0 +1,123 @@
+[
+    {
+        "_id":1,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+        
+        "Teacher": "Sabbir Sir",
+        "Course":[
+                "php:3:30-5:00",
+                "Js:5:30-7:00",
+                "Html:7:00-8:30",
+                "Math:10:00-11:30",
+                "ict:3:30-5:00",
+                "Geometry:5:30-7:00",
+                "CSS:7:00-8:30",
+                "VecTor:10:00-11:30"
+                
+                
+        ]
+    },
+    {
+        "_id":2,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1", 
+        "Teacher": "Najifa ",
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "ict:3:30-5:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30",
+            "Html:7:00-8:30",
+           
+            "Geometry:5:30-7:00",
+            "CSS:7:00-8:30",
+            "VecTor:10:00-11:30"
+            
+    ]
+    },
+    {
+        "_id":3,
+        
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+
+        
+        "Teacher": "Habib",
+        "Course":[
+           
+            
+    ]
+    },
+    {
+        "_id":4,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+
+                "Teacher": "Haider Ali",
+        "Course":[
+            
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30",
+            "php:3:30-5:00",
+            "ict:3:30-5:00",
+            "Geometry:5:30-7:00",
+            "CSS:7:00-8:30",
+            "VecTor:10:00-11:30"
+            
+    ]
+    },
+    {
+        "_id":5,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+
+        
+        "Teacher": "Rakib Sir",
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "Math:10:00-11:30",
+            "VecTor:10:00-11:30",
+            "ict:3:30-5:00",
+            "Geometry:5:30-7:00",
+            "CSS:7:00-8:30"
+            
+            
+    ]
+    },
+    {
+        "_id":6,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+
+        
+        "Teacher": "Atif Sir",
+        "Course":[
+            "php:3:30-5:00",
+                "Js:5:30-7:00",
+                "Html:7:00-8:30",
+                "Math:10:00-11:30",
+                "Geometry:5:30-7:00",
+                "ict:3:30-5:00",
+                "CSS:7:00-8:30",
+                "VecTor:10:00-11:30"
+            
+    ]
+    },
+    {
+        "_id":7,
+        "img":"https://th.bing.com/th/id/OIF.YlpLWnM8WqsX3oT35XVhww?pid=ImgDet&rs=1",
+
+        
+        "Teacher": "khalekh Sir",
+        "Course":[
+            "php:3:30-5:00",
+            "Js:5:30-7:00",
+            "Html:7:00-8:30",
+            "ict:3:30-5:00",
+            "Math:10:00-11:30",
+            "Geometry:5:30-7:00",
+            "CSS:7:00-8:30",
+            "VecTor:10:00-11:30"
+            
+    ]
+    }
+]

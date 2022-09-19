@@ -7,7 +7,7 @@ const AvailableTeachers = () => {
     const [contact,setContact]=useState(null);
 
     useEffect(()=>{
-        fetch('services.json')
+        fetch('teachers.json')
         .then(res=>res.json())
         .then(data=>setServices(data));
     },[])

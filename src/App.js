@@ -14,6 +14,12 @@ import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyCourses from './Pages/Dashboard/MyCourses';
+import MyRequest from './Pages/Dashboard/MyRequest';
+import Users from './Pages/Dashboard/Users';
+import MyHistory from './Pages/Dashboard/MyHistory';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 
 
 function App() {
@@ -35,6 +41,15 @@ function App() {
         <RequireAuth>
               <Teachers />
         </RequireAuth>} />
+        <Route path="dashboard" element={
+        <RequireAuth>
+              <Dashboard />
+        </RequireAuth>} >
+          <Route index element={<MyCourses></MyCourses>}> </Route>
+          <Route path='request' element={<MyRequest></MyRequest>}> </Route>
+          <Route path='history' element={<MyHistory></MyHistory>}> </Route>
+          <Route path='users' element={<RequireAdmin><Users></Users></RequireAdmin>}> </Route>
+        </Route>
       </Routes>
 
       <ToastContainer></ToastContainer>

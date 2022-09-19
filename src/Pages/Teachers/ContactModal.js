@@ -1,20 +1,54 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
+import auth from '../../firebase.init';
 
 const ContactModal = ({contact,setContact}) => {
-    const {Teacher,Course,img}=contact;
+    const {_id,Teacher,Course,img}=contact;
+    const [user, loading, error] = useAuthState(auth);
+
     const handleContact=event=>{
-        event.preventDefault();
+        event.preventDefault(); 
         const cours =event.target.cours.value;
         console.log( cours,Course,Teacher);
-        setContact(null);
+        const contacting={
+          contactNowId: _id,
+          Teacher,
+          contactNow:Course,
+          cours,
+          client:user.email,
+          clientName:user.displayName,
+          phone:event.target.phone.value
+        }
+        fetch('http://localhost:5000/contacting',{
+          method:'POST',
+          headers:{
+            'content-type': 'application/json'
+          },
+          body:JSON.stringify(contacting)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+          if(data.success){
+            toast(`course is purchase,at${cours},with that${Teacher}`);
+          }
+          else{
+
+            toast.error(`course is already  purchased,on${data.contacting?.cours},with that ${data.contacting?.Teacher} `);
+
+          }
+            //to close the modal
+              setContact(null);
+        })
+        
     }
     return (
         <div>
-        <input type="checkbox" id="contact-modal" className="modal-toggle" />
+        <input type="checkbox" id="Contact-modal" className="modal-toggle" />
 <div className="modal modal-bottom sm:modal-middle">
   <div className="modal-box">
-  <img src={img} alt="Course" />
-  <label htmlFor="contact-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+  <img src={img} alt="Teacher" width='200' />
+  <label htmlFor="Contact-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
 
     <h3 className="font-bold text-lg text-green-400">contact :{Teacher}</h3>
     
